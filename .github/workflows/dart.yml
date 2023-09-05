@@ -22,7 +22,7 @@ jobs:
 
       - run: ls -la
     
-      - run: cd flutter_application_1/
+      - run: cd flutter_application_1
 
       - run: ls -la
 
