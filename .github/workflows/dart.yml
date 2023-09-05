@@ -20,7 +20,7 @@ jobs:
 
       - run: flutter doctor -v
 
-       run: ls -la
+      - run: ls -la
     
       - run: cd flutter_application_1/
 
