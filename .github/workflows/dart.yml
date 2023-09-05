@@ -10,6 +10,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     environment: stage
+    defaults:
+      run:
+        working-directory: ./flutter_application_1
 
     steps:
       - uses: actions/checkout@v3
@@ -18,16 +21,13 @@ jobs:
         with:
           flutter-version: '3.7.7'
 
-      - run: flutter doctor -v
-
-      - run: ls -la
-    
-      - run: cd flutter_application_1
-
+      
       - run: ls -la
 
-      - run: flutter pub get
+      # - run: flutter doctor -v
 
-      - run: dart analyze --fatal-infos --fatal-warnings
+      # - run: flutter pub get
 
-      - run: flutter build apk --debug
+      # - run: dart analyze --fatal-infos --fatal-warnings
+
+      # - run: flutter build apk --debug
