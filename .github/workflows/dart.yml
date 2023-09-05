@@ -24,6 +24,8 @@ jobs:
     
       - run: cd flutter_application_1/
 
+      - run: ls -la
+
       - run: flutter pub get
 
       - run: dart analyze --fatal-infos --fatal-warnings
