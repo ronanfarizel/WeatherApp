@@ -20,6 +20,8 @@ jobs:
 
       - run: flutter doctor -v
     
+      - run: cd flutter_application_1/
+
       - run: flutter pub get
 
       - run: dart analyze --fatal-infos --fatal-warnings
